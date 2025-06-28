@@ -1,16 +1,41 @@
+<!-- app/views/layouts/application.html.erb -->
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TodoNote</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Todo + Wish note</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- スマホ対応 -->
   </head>
 
-  <body>
-    <%= yield %>
+  <body style="margin: 0; font-family: sans-serif;">
+    <!-- 🔹 共通ヘッダー -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #ccc;">
+      <h1 style="margin: 0; font-size: 1.5rem; color: #e91ec4;">Todo + Wish note</h1>
+
+      <nav>
+        <%# if user_signed_in? %>
+          <%#= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+        <%# else %>
+          <%#= link_to "ログイン", new_user_session_path %> |
+          <%#= link_to "新規登録", new_user_registration_path %>
+        <%# end %>
+        
+
+        <!-- 仮リンク -->
+        <a href="#">ログイン</a> |
+        <a href="#">新規登録</a>
+      </nav>
+    </header>
+
+    <!-- 🔸 各ページの中身がここに表示される -->
+    <main style="padding: 1rem; max-width: 600px; margin: auto;">
+      <%= yield %>
+    </main>
   </body>
 </html>
