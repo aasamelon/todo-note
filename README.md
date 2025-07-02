@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション名
+ToDo+Wish note
 
-Things you may want to cover:
 
-* Ruby version
+## アプリケーション概要
+やるべきこと（ToDo）だけでなく、やりたいこと（Wish）も入力し、
+それらをもとに1日のスケジュールを組み立てて、自己管理を行うアプリケーションです。  
+ToDoとWishを分けて管理することで、日常のタスクだけでなく、自分の「やりたいこと」にも時間を割くことができ、バランスの取れた一日を設計できます。
 
-* System dependencies
+## URL
+https://todo-note628.onrender.com/
 
-* Configuration
+## テスト用アカウント
+Basic認証ID：todo_admin
+Basic認証パスワード：5555
 
-* Database creation
+## 利用方法
+1 トップページのヘッダーから新規登録を行う  
+2 ログイン後、マイページに移動する  
+3「ToDo/Wish投稿」ページから、やるべきこと（ToDo）や、やりたいこと（Wish）を入力する  
+4「ToDo/Wish一覧」ページで、登録した内容を確認・編集・削除できる  
+5「スケジュール作成」ページから、登録済みのToDoまたはWishを選んで予定に組み込む  
+6作成したスケジュールは、リスト形式で確認できる
 
-* Database initialization
+## アプリケーションを作成した背景
+休日を効率的かつ有意義に過ごしたいと思ったことが、このアプリケーションを作るきっかけでした。これまでの私は、ToDo（やるべきこと）に時間を費やしすぎたり、Wish（やりたいこと）だけで1日が終わってしまったりと、偏りのある過ごし方をしてしまうことがありました。  
+そこで、ToDoとWishを分けて管理し、両方をバランスよくスケジュールに取り入れることで、1日をより有意義に使えるのではと考え、このアプリケーションを開発しました。
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## データベース設計
+[![Image from Gyazo](https://i.gyazo.com/9963e488c4a245235ed7b4f1f1fbe993.png)](https://gyazo.com/9963e488c4a245235ed7b4f1f1fbe993)
 
-* ...
+## 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/35a858183fd4c144de7245d7d0fda7e8.png)](https://gyazo.com/35a858183fd4c144de7245d7d0fda7e8)
