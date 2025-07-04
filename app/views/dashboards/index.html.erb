@@ -1,20 +1,36 @@
 <section id="todo" style="margin-bottom: 2rem;">
-  <h2 class="section-title">ToDo</h2>
-  <form>
-    <input type="text" placeholder="ToDoを追加" />
-    <button type="submit">追加</button>
-  </form>
+<h2 class="section-title">
+  <%= link_to "ToDo", todos_path, style: "text-decoration: underline; color: inherit;" %>
+</h2>
+  
+
+  <%= form_with model: @todo, url: create_todo_dashboards_path, local: true do |form| %>
+    <%= form.text_field :title, placeholder: "ToDoを追加" %>
+    <%= form.submit "追加" %>
+  <% end %>
+
+  <ul>
+    <% @todos.each do |todo| %>
+      <li><%= todo.title %></li>
+    <% end %>
+  </ul>
 </section>
 
-<section id="wish" style="margin-bottom: 2rem;">
-<h2 class="section-title">Wish</h2>
-  <form>
-    <input type="text" placeholder="Wishを追加" />
-    <button type="submit">追加</button>
-  </form>
-</section>
+<%# <section id="wish" style="margin-bottom: 2rem;">
+  <h2 class="section-title">Wish</h2> %>
 
-<section id="schedule" style="margin-bottom: 2rem;">
+  <%# <%= form_with model: @wish, url: create_wish_dashboards_path, local: true do |form| %>
+    <%# <%= form.text_field :title, placeholder: "Wishを追加" %> 
+    <%# <%= form.submit "追加" %> 
+  <%# <% end %>
+  <%# <ul>
+    <% @wishes.each do |wish| %>
+      <%# <li><%= wish.title</li>  %>
+    <%# <% end %>  
+  <%# </ul> %>
+<%# </section>  %> 
+
+<%# <section id="schedule" style="margin-bottom: 2rem;">
   <h2 style="text-decoration: underline;">Schedule</h2>
 
   <div style="display: flex; gap: 0.5rem; align-items: center; margin-bottom: 1rem;">
@@ -23,10 +39,13 @@
 
     <label for="task">ToDo/Wish:</label>
     <select id="task" name="task">
-    <option disabled selected style="color: gray;">選択してください</option>  
-    </select>
+      <option disabled selected style="color: gray;">選択してください</option>  
+      <% (@todos + (@wishes || [])).each do |item| %>
+        <%# <option value="<%= item.id %>
+        <%# <%= item.title</option>  %>
+      <%# <% end %>
+    <%# </select>
   </div>
 
   <button type="button">追加</button>
-</section>
-
+</section> %> 

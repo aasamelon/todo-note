@@ -1,0 +1,21 @@
+<h2>ToDo 一覧（編集・削除）</h2>
+
+
+<% if alert %>
+  <p style="color: red;"><%= alert %></p>
+<% end %>
+
+<ul>
+  <% @todos.each do |todo| %>
+    <li style="margin-bottom: 1rem;">
+      <%= form_with model: todo, url: todo_path(todo), method: :patch, local: true do |f| %>
+        <%= f.text_field :title, value: todo.title, style: "margin-right: 0.5rem;" %>
+        <%= f.submit "更新", style: "margin-right: 0.5rem;" %>
+      <% end %>
+
+      <%= button_to "削除", todo_path(todo), method: :delete, data: { confirm: "本当に削除しますか？" }, form: { style: "display: inline;" } %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "トップページに戻る", root_path %>
