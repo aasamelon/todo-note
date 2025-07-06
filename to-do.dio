@@ -1,71 +1,59 @@
 <mxfile host="65bd71144e">
     <diagram id="a_Da5yyWU-agTyhFGm13" name="ページ1">
-        <mxGraphModel dx="1025" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="524" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="6" value="トップページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="6" value="トップページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="10" y="40" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="ユーザーログインページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="7" value="ユーザーログインページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="190" y="40" width="180" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="ユーザー新規登録ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="8" value="ユーザー新規登録ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="190" y="150" width="190" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="ユーザーマイページ&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="9" value="ユーザーマイページ&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="190" y="260" width="180" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="ToDo/Wish投稿ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="360" width="130" height="80" as="geometry"/>
+                <mxCell id="10" value="ToDo編集ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="349" y="360" width="130" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="&amp;nbsp;ToDo/Wish一覧ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="470" width="130" height="80" as="geometry"/>
+                <mxCell id="11" value="&amp;nbsp;Wish編集ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="465" width="130" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="詳細ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="400" y="475" width="120" height="80" as="geometry"/>
+                <mxCell id="14" value="schedule編集ページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="354" y="585" width="126" height="75" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;編集ページ&lt;/font&gt;&lt;/div&gt;" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="560" y="475" width="120" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="14" value="scheduleページ" style="shape=ext;double=1;rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="225" y="580" width="120" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="30" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                <mxCell id="30" value="" style="line;strokeWidth=2;direction=south;html=1;" parent="1" vertex="1">
                     <mxGeometry x="150" y="80" width="20" height="225" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
+                <mxCell id="49" value="" style="line;strokeWidth=2;html=1;" parent="1" vertex="1">
                     <mxGeometry x="130" y="75" width="60" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
+                <mxCell id="50" value="" style="line;strokeWidth=2;html=1;" parent="1" vertex="1">
                     <mxGeometry x="160" y="200" width="30" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
+                <mxCell id="51" value="" style="line;strokeWidth=2;html=1;" parent="1" vertex="1">
                     <mxGeometry x="160" y="300" width="30" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="170" y="305" width="10" height="315" as="geometry"/>
+                <mxCell id="53" value="" style="line;strokeWidth=2;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="387.5" width="70" height="25" as="geometry"/>
                 </mxCell>
-                <mxCell id="53" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="175" y="387.5" width="45" height="25" as="geometry"/>
+                <mxCell id="55" value="" style="line;strokeWidth=2;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="500" width="70" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="55" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="175" y="510" width="45" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="59" style="edgeStyle=none;html=1;exitX=0.75;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+                <mxCell id="59" style="edgeStyle=none;html=1;exitX=0.75;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="205" y="620" as="targetPoint"/>
                         <mxPoint x="205" y="620" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="63" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="175" y="615" width="45" height="10" as="geometry"/>
+                <mxCell id="63" value="" style="line;strokeWidth=2;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="620" width="75" height="10" as="geometry"/>
                 </mxCell>
-                <mxCell id="64" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="350" y="510" width="50" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="65" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="520" y="510" width="40" height="10" as="geometry"/>
+                <mxCell id="106" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="275" y="340" width="10" height="290" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

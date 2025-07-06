@@ -44,4 +44,4 @@ https://todo-note628.onrender.com/
 [![Image from Gyazo](https://i.gyazo.com/9963e488c4a245235ed7b4f1f1fbe993.png)](https://gyazo.com/9963e488c4a245235ed7b4f1f1fbe993)
 
 ## 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/35a858183fd4c144de7245d7d0fda7e8.png)](https://gyazo.com/35a858183fd4c144de7245d7d0fda7e8)
+[![Image from Gyazo](https://i.gyazo.com/232a93b180c0d96e4e6eb61452925428.png)](https://gyazo.com/232a93b180c0d96e4e6eb61452925428)
