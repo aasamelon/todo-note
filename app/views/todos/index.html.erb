@@ -1,21 +1,35 @@
-<h2>ToDo 一覧（編集・削除）</h2>
+<h2>ToDo 編集・削除</h2>
 
-
-<% if alert %>
-  <p style="color: red;"><%= alert %></p>
-<% end %>
-
-<ul>
+<!-- プルダウン：編集したいToDoを選択 -->
+<select id="todo-select">
+  <option value="">編集したいToDoを選んでください</option>
   <% @todos.each do |todo| %>
-    <li style="margin-bottom: 1rem;">
-      <%= form_with model: todo, url: todo_path(todo), method: :patch, local: true do |f| %>
-        <%= f.text_field :title, value: todo.title, style: "margin-right: 0.5rem;" %>
-        <%= f.submit "更新", style: "margin-right: 0.5rem;" %>
-      <% end %>
-
-      <%= button_to "削除", todo_path(todo), method: :delete, data: { confirm: "本当に削除しますか？" }, form: { style: "display: inline;" } %>
-    </li>
+    <option value="<%= todo.id %>" data-title="<%= todo.title %>">
+      <%= todo.title %>
+    </option>
   <% end %>
-</ul>
+</select>
 
-<%= link_to "トップページに戻る", root_path %>
+<!-- 編集・削除フォーム（最初は非表示） -->
+<div id="edit-form" style="margin-top: 1rem; display: none;">
+  <%= form_with url: "", method: :patch, id: "todo-edit-form", local: true do |f| %>
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+    <!-- タイトル入力 -->
+    <input type="text" name="todo[title]" id="todo-title-input">
+
+    <!-- 更新ボタン -->
+    <input type="submit" value="更新">
+
+    <!-- 削除ボタン -->
+    <button type="button" id="delete-button" style="margin-left: 1rem; color: red;">
+      削除
+    </button>
+  <% end %>
+</div>
+
+<!-- 削除用フォーム（JavaScriptでsubmitされる） -->
+<form id="delete-form" method="post" style="display: none;">
+  <input type="hidden" name="_method" value="delete">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>

@@ -6,6 +6,7 @@
     <title>ToDo + Wish note</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= javascript_include_tag "item_editor" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
@@ -16,8 +17,9 @@
   <body style="margin: 0; font-family: sans-serif;">
     <!-- 🔹 共通ヘッダー -->
     <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #ccc;">
-      <h1 style="margin: 0; font-size: 1.5rem; color: #e91ec4;">ToDo + Wish note</h1>
-
+      <h1 style="margin: 0; font-size: 1.5rem;">
+        <%= link_to "ToDo + Wish note", root_path, style: "color: #e91ec4; text-decoration: none;" %>
+      </h1>
       <nav>
         <% if user_signed_in? %>
           <span style="margin-right: 1rem;">
